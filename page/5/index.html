@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>henjue Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="henjue Blog">
+<meta property="og:url" content="http://blog.henjue.net/page/5/index.html">
+<meta property="og:site_name" content="henjue Blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="henjue Blog">
+  
+    <link rel="alternative" href="/atom.xml" title="henjue Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">henjue Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Android Developer,Linuxer,Googler，LiGuxer, Idiot</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.henjue.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-ubuntu-13-04-e7-bc-96-e8-af-91pidgin-lwqq" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/06/16/ubuntu-13-04-e7-bc-96-e8-af-91pidgin-lwqq/" class="article-date">
+  <time datetime="2014-06-16T05:46:00.000Z" itemprop="datePublished">2014-06-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/06/16/ubuntu-13-04-e7-bc-96-e8-af-91pidgin-lwqq/">ubuntu 13.04编译pidgin-lwqq</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先安装一些编译所需的库,和工具</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install cmake libglib2.0-dev libpurple-dev libmozjs185-dev libcurl-ocaml-dev libsqlite3-dev</span><br></pre></td></tr></table></figure>
+<p>然后到作者的git下载代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:xiehuc/pidgin-lwqq.git</span><br></pre></td></tr></table></figure></p>
+<p>下载完了开始编译安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git submodule init</span><br><span class="line">git submodule update</span><br><span class="line">mkdir build;<span class="built_in">cd</span> build</span><br><span class="line">cmake ..</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure></p>
+<p>搞定可以使用了<br>以下是我截图，发日志的同时刚给自己编译安装的<br><img src="http://images.cnitblog.com/blog/519621/201308/20094417-c0b36416085f4927a728ca950a1b7ce8.png" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://blog.henjue.net/2014/06/16/ubuntu-13-04-e7-bc-96-e8-af-91pidgin-lwqq/" data-id="cjf9ihjcd000so4q9k8vx8odm" class="article-share-link" data-share="baidu">share</a>
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-linux-e4-b8-8b-e5-88-b6-e4-bd-9cmac-os-usb-e5-90-af-e5-8a-a8-e7-9b-98-e7-99-be-e5-88-86-e4-b9-8b-e7-99-be-e5-8f-af-e4-bb-a5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/06/16/linux-e4-b8-8b-e5-88-b6-e4-bd-9cmac-os-usb-e5-90-af-e5-8a-a8-e7-9b-98-e7-99-be-e5-88-86-e4-b9-8b-e7-99-be-e5-8f-af-e4-bb-a5/" class="article-date">
+  <time datetime="2013-06-16T08:43:00.000Z" itemprop="datePublished">2013-06-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/06/16/linux-e4-b8-8b-e5-88-b6-e4-bd-9cmac-os-usb-e5-90-af-e5-8a-a8-e7-9b-98-e7-99-be-e5-88-86-e4-b9-8b-e7-99-be-e5-8f-af-e4-bb-a5/">linux下制作Mac OS USB启动盘(百分之百可以)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天自己手贱把自己的macbook硬盘全干掉了,无奈回复系统,没有光盘.我的台式机上只有linux系统.但是我有OS 10.8的dmg镜像(很早之前下载放在电脑里的)使用苹果EFI固件上自带的在线恢复(开机command+R的那个在线恢复),奶奶的,我20M光纤,居然要还那么慢,所以放弃这个方法,后来上网搜了半天全是在mac下去制作USB启动盘,你妈都是写傻逼啊.我系统都没了,我还哪里去拿mac来做启动盘?好吧linux下弄吧</p>
+<p>linux下先用parted命令给u盘从重新分区.其他工具我不知道但是我知道这个工具可以建立GUUID分区表(macbook只能从GUUID分区表的磁盘启动),打开parted后把分区都干掉,然后输入”mklabel gpt” 这个命令就是建立gpt(GUUID来区分磁盘分区的)分区表.parted的用法自己百度吧.一搜一大吧.把u盘的分区建立好之后直接用DD命令写入就行了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dd <span class="keyword">if</span>=~/mac2udisk.dmg of=/dev/sdb2 bs=20M</span><br></pre></td></tr></table></figure></p>
+<p>如果不把u盘弄成GUUID的分区.虽然开机能识别u盘,但是启动的时候会显示一个禁止的符号(大家应该看到过),还有如果不给U盘分区.直接DD写入到整个U盘(如直接写入/dev/sdb)建立分区后应该是/dev/sdbx(x是分区标号)开机也无法启动的.<br>我的u盘分区<br><img src="http://images.cnitblog.com/blog/519621/201306/17004612-e2610d2ac6eb45ef9a46394bf721688a.png" alt=""></p>
+<p>我写入的命令<br><img src="http://images.cnitblog.com/blog/519621/201306/17004641-ded93595092e4b24878da2c8b8094099.png" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://blog.henjue.net/2013/06/16/linux-e4-b8-8b-e5-88-b6-e4-bd-9cmac-os-usb-e5-90-af-e5-8a-a8-e7-9b-98-e7-99-be-e5-88-86-e4-b9-8b-e7-99-be-e5-8f-af-e4-bb-a5/" data-id="cjf9ihjc3000ho4q91wfrtf6b" class="article-share-link" data-share="baidu">share</a>
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/05/29/android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d/" class="article-date">
+  <time datetime="2013-05-29T04:26:00.000Z" itemprop="datePublished">2013-05-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/android/">android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/05/29/android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d/">android继承View，onDraw方法实现首字母快速定位</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br></pre></td><td class="code"><pre><span class="line">package com.example.contactssort;</span><br><span class="line"></span><br><span class="line">import android.annotation.SuppressLint;</span><br><span class="line">import android.annotation.TargetApi;</span><br><span class="line">import android.content.Context;</span><br><span class="line">import android.graphics.Canvas;</span><br><span class="line">import android.graphics.Paint;</span><br><span class="line">import android.graphics.Paint.FontMetrics;</span><br><span class="line">import android.graphics.Paint.Style;</span><br><span class="line">import android.graphics.RectF;</span><br><span class="line">import android.os.Build;</span><br><span class="line">import android.util.AttributeSet;</span><br><span class="line">import android.view.MotionEvent;</span><br><span class="line">import android.view.View;</span><br><span class="line">import android.widget.ListView;</span><br><span class="line">import android.widget.SectionIndexer;</span><br><span class="line"></span><br><span class="line">public class SideBar extends View &#123;</span><br><span class="line">    private int textColor = 0xFFA6A9AA;</span><br><span class="line">    private int backgroundColor = 0x55DDDDDD;</span><br><span class="line">    private int backgroundActionDownColor = 0xFFCCCCCC;</span><br><span class="line">    private boolean isDown = false;</span><br><span class="line"></span><br><span class="line">    @TargetApi(Build.VERSION_CODES.HONEYCOMB)</span><br><span class="line">    public SideBar(Context context, AttributeSet attrs, int defStyle) &#123;</span><br><span class="line">        super(context, attrs, defStyle);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private char[] l = new char[0];</span><br><span class="line">    private SectionIndexer sectionIndexter = null;</span><br><span class="line">    private ListView list;</span><br><span class="line">    private int m_nItemHeight = 29;</span><br><span class="line">    private int selfHeight;</span><br><span class="line">    private int selfWidth;</span><br><span class="line">    private float textSize;</span><br><span class="line">    private int selectIndex = -1;</span><br><span class="line"></span><br><span class="line">    public SideBar(Context context) &#123;</span><br><span class="line">        super(context);</span><br><span class="line">        init();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void init() &#123;</span><br><span class="line">        // setBackgroundColor(backgroundColor);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public SideBar(Context context, AttributeSet attrs) &#123;</span><br><span class="line">        super(context, attrs);</span><br><span class="line">        init();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setListView(ListView _list) &#123;</span><br><span class="line">        list = _list;</span><br><span class="line">        sectionIndexter = (SectionIndexer) _list.getAdapter();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) &#123;</span><br><span class="line">        this.textSize = getResources().getDimension(R.dimen.index_text_size);</span><br><span class="line">        super.onMeasure(widthMeasureSpec, heightMeasureSpec);</span><br><span class="line">        int height = MeasureSpec.getSize(heightMeasureSpec);</span><br><span class="line">        int width = MeasureSpec.getSize(widthMeasureSpec);</span><br><span class="line">        this.selfHeight = height;</span><br><span class="line">        this.selfWidth = width;</span><br><span class="line">        m_nItemHeight = selfHeight / l.length;</span><br><span class="line">        int newWidth = MeasureSpec.makeMeasureSpec((int) this.textSize + 5, MeasureSpec.AT_MOST);</span><br><span class="line">        setMeasuredDimension(newWidth, heightMeasureSpec);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public boolean onTouchEvent(MotionEvent event) &#123;</span><br><span class="line">        super.onTouchEvent(event);</span><br><span class="line">        int i = (int) event.getY();</span><br><span class="line">        int idx = i / m_nItemHeight;</span><br><span class="line">        if (idx &gt;= l.length) &#123;</span><br><span class="line">            idx = l.length - 1;</span><br><span class="line">        &#125; else if (idx &lt; 0) &#123;</span><br><span class="line">            idx = 0;</span><br><span class="line">        &#125;</span><br><span class="line">        if (event.getAction() == MotionEvent.ACTION_DOWN || event.getAction() == MotionEvent.ACTION_MOVE) &#123;</span><br><span class="line">            if (sectionIndexter == null) &#123;</span><br><span class="line">                sectionIndexter = (SectionIndexer) list.getAdapter();</span><br><span class="line">            &#125;</span><br><span class="line">            int position = sectionIndexter.getPositionForSection(l[idx]);</span><br><span class="line">            if (position == -1) &#123;</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line">            this.selectIndex = idx;</span><br><span class="line">            list.setSelection(position);</span><br><span class="line">            isDown = true;</span><br><span class="line">            invalidate();</span><br><span class="line">        &#125;</span><br><span class="line">        if (event.getAction() == MotionEvent.ACTION_UP) &#123;</span><br><span class="line">            isDown = false;</span><br><span class="line">            this.selectIndex = -1;</span><br><span class="line">            invalidate();</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @SuppressLint(&quot;DrawAllocation&quot;)</span><br><span class="line">    protected void onDraw(Canvas canvas) &#123;</span><br><span class="line">        Paint paint = new Paint();</span><br><span class="line">        paint.setTextAlign(Paint.Align.CENTER);</span><br><span class="line">        paint.setTextSize(this.textSize);</span><br><span class="line">        paint.setColor(textColor);</span><br><span class="line">        FontMetrics fm = paint.getFontMetrics();</span><br><span class="line">        int textHeight = (int) (Math.ceil(fm.descent - fm.ascent) + 2);</span><br><span class="line">        float widthCenter = getMeasuredWidth() / 2;</span><br><span class="line">        RectF rect = null;</span><br><span class="line">        Paint bg_paint = new Paint(paint);</span><br><span class="line"></span><br><span class="line">        if (isDown) &#123;</span><br><span class="line">            rect = new RectF(0, 0, getWidth(), getHeight());</span><br><span class="line">            bg_paint.setColor(backgroundActionDownColor);</span><br><span class="line"></span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            rect = new RectF(0, 0, getWidth(), getHeight());</span><br><span class="line">            bg_paint.setColor(backgroundColor);</span><br><span class="line">        &#125;</span><br><span class="line">        canvas.save();</span><br><span class="line">        canvas.drawRoundRect(rect, 15, 15, bg_paint);</span><br><span class="line">        canvas.restore();</span><br><span class="line">        for (int i = 0; i &lt; l.length; i++) &#123;</span><br><span class="line">            if (selectIndex == i) &#123;</span><br><span class="line">                Paint item_bg_paint = new Paint(paint);</span><br><span class="line">                item_bg_paint.setColor(0xffccffcc);</span><br><span class="line">                canvas.save();</span><br><span class="line">                RectF item_rect = new RectF(0, i * m_nItemHeight, getWidth(), m_nItemHeight + i * m_nItemHeight);</span><br><span class="line">                canvas.drawRoundRect(item_rect, 15, 15, item_bg_paint);</span><br><span class="line">                canvas.restore();</span><br><span class="line">            &#125; else if (selectIndex == l.length - 1) &#123;</span><br><span class="line">                Paint item_bg_paint = new Paint(paint);</span><br><span class="line">                item_bg_paint.setColor(0xffccffcc);</span><br><span class="line">                canvas.save();</span><br><span class="line">                RectF item_rect = new RectF(0, l.length * m_nItemHeight, getWidth(), getHeight());</span><br><span class="line">                canvas.drawRoundRect(item_rect, 15, 15, item_bg_paint);</span><br><span class="line">                canvas.restore();</span><br><span class="line">            &#125;</span><br><span class="line">		float offsetY=((i)*m_nItemHeight)+((m_nItemHeight-textHeight)/2+textHeight-8);//字体纵向居中，20130530修正更新</span><br><span class="line">		canvas.drawText(String.valueOf(l[i]), widthCenter, offsetY, paint);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        super.onDraw(canvas);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setSections(char[] charArray) &#123;</span><br><span class="line">        this.l = charArray;</span><br><span class="line">        invalidate();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">package com.example.contactssort;</span><br><span class="line"></span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.List;</span><br><span class="line"></span><br><span class="line">public class IndexItem &#123;</span><br><span class="line"></span><br><span class="line">    List&lt;String&gt; indexs = new ArrayList&lt;String&gt;();</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 添加数据索引。每一个数据都要添加</span><br><span class="line">     * </span><br><span class="line">     * @param c</span><br><span class="line">     */</span><br><span class="line">    public void addIndex(char c) &#123;</span><br><span class="line">        indexs.add(String.valueOf(c));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public int getCount() &#123;</span><br><span class="line">        return indexs.size();</span><br><span class="line">    &#125;</span><br><span class="line">    public int indexAt(char c)&#123;</span><br><span class="line">        return indexs.indexOf(String.valueOf(c));</span><br><span class="line">    &#125;</span><br><span class="line">    public String get(int position) &#123;</span><br><span class="line">        return this.indexs.get(position);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">package com.example.contactssort;</span><br><span class="line"></span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.Locale;</span><br><span class="line"></span><br><span class="line">import android.app.Activity;</span><br><span class="line">import android.content.Context;</span><br><span class="line">import android.database.Cursor;</span><br><span class="line">import android.graphics.Color;</span><br><span class="line">import android.view.Gravity;</span><br><span class="line">import android.view.LayoutInflater;</span><br><span class="line">import android.view.View;</span><br><span class="line">import android.view.ViewGroup;</span><br><span class="line">import android.widget.AlphabetIndexer;</span><br><span class="line">import android.widget.BaseAdapter;</span><br><span class="line">import android.widget.SectionIndexer;</span><br><span class="line">import android.widget.TextView;</span><br><span class="line"></span><br><span class="line">public class MyAdapter extends BaseAdapter implements SectionIndexer &#123;</span><br><span class="line">    private ArrayList&lt;String&gt; stringArray;</span><br><span class="line">    private Context context;</span><br><span class="line">    IndexItem indexs;</span><br><span class="line">    public MyAdapter(Context _context, ArrayList&lt;String&gt; arr,SideBar sidebar) &#123;</span><br><span class="line">        stringArray = arr;</span><br><span class="line">        context = _context;</span><br><span class="line">        String alphabet=&quot;&quot;;</span><br><span class="line">        indexs=new IndexItem();</span><br><span class="line">        for(String frist:arr)&#123;</span><br><span class="line">            char c = frist.charAt(0);</span><br><span class="line">            String upperCase = String.valueOf(c).toUpperCase();</span><br><span class="line">            if(!alphabet.contains(upperCase))&#123;</span><br><span class="line">                alphabet+=upperCase;    </span><br><span class="line">            &#125;</span><br><span class="line">            indexs.addIndex(upperCase.charAt(0));</span><br><span class="line">        &#125;</span><br><span class="line">        sidebar.setSections(alphabet.toUpperCase().toCharArray());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public int getCount() &#123;</span><br><span class="line">        return stringArray.size();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Object getItem(int arg0) &#123;</span><br><span class="line">        return stringArray.get(arg0);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public long getItemId(int arg0) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public View getView(int position, View v, ViewGroup parent) &#123;</span><br><span class="line">        LayoutInflater inflate = ((Activity) context).getLayoutInflater();</span><br><span class="line">        View view = (View) inflate.inflate(R.layout.listview_row, null);</span><br><span class="line">        TextView header = (TextView) view.findViewById(R.id.section);</span><br><span class="line">        TextView textView = (TextView) view.findViewById(R.id.textView);</span><br><span class="line">        char currentF=stringArray.get(position).charAt(0);</span><br><span class="line">        if(position==0)&#123;</span><br><span class="line">            header.setVisibility(View.VISIBLE);</span><br><span class="line">            header.setText((&quot;&quot;+currentF).toUpperCase());</span><br><span class="line">        &#125;else&#123;</span><br><span class="line"></span><br><span class="line">            char oldF=stringArray.get(position-1).charAt(0);</span><br><span class="line">            if(!(&quot;&quot;+currentF).equalsIgnoreCase((&quot;&quot;+oldF)))&#123;</span><br><span class="line">                header.setVisibility(View.VISIBLE);</span><br><span class="line">                header.setText((&quot;&quot;+currentF).toUpperCase());</span><br><span class="line">            &#125;else&#123;</span><br><span class="line">                header.setVisibility(View.GONE);</span><br><span class="line">                header.setText(&quot;&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        textView.setText(stringArray.get(position));</span><br><span class="line">        return view;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public int getPositionForSection(int section) &#123;</span><br><span class="line">        int position=indexs.indexAt((char) section);</span><br><span class="line">        return position;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public int getSectionForPosition(int arg0) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Object[] getSections() &#123;</span><br><span class="line">        return null;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">package com.example.contactssort;</span><br><span class="line"></span><br><span class="line">import java.util.ArrayList;</span><br><span class="line"></span><br><span class="line">import android.app.Activity;</span><br><span class="line">import android.os.Bundle;</span><br><span class="line">import android.widget.ListView;</span><br><span class="line"></span><br><span class="line">public class MainActivity extends Activity &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</span><br><span class="line">        super.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">        ListView list = (ListView) findViewById(R.id.myListView);</span><br><span class="line">        SideBar side=(SideBar)findViewById(R.id.side);</span><br><span class="line">        ArrayList&lt;String&gt; stringList = InitListViewData();</span><br><span class="line">        MyAdapter adapter = new MyAdapter(this, stringList,side);</span><br><span class="line">        side.setListView(list);</span><br><span class="line">        list.setAdapter(adapter);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private ArrayList&lt;String&gt; InitListViewData() &#123;</span><br><span class="line">        ArrayList&lt;String&gt; stringList = new ArrayList&lt;String&gt;();</span><br><span class="line">        stringList.add(&quot;asdf&quot;);</span><br><span class="line">        stringList.add(&quot;anbcd&quot;);</span><br><span class="line">        stringList.add(&quot;bdcd&quot;);</span><br><span class="line">        stringList.add(&quot;bfefasf&quot;);</span><br><span class="line">        stringList.add(&quot;bcadaf&quot;);</span><br><span class="line">        stringList.add(&quot;csdafad&quot;);</span><br><span class="line">        stringList.add(&quot;dfdaf&quot;);</span><br><span class="line">        stringList.add(&quot;edfdfd&quot;);</span><br><span class="line">        stringList.add(&quot;fsdfadfasfd&quot;);</span><br><span class="line">        stringList.add(&quot;fadsfasdf&quot;);</span><br><span class="line">        stringList.add(&quot;fweff&quot;);</span><br><span class="line">        stringList.add(&quot;fhghdfgh&quot;);</span><br><span class="line">        stringList.add(&quot;gasdfasdfsa&quot;);</span><br><span class="line">        stringList.add(&quot;gadfawe&quot;);</span><br><span class="line">        stringList.add(&quot;haof&quot;);</span><br><span class="line">        stringList.add(&quot;hjooiuoiuio&quot;);</span><br><span class="line">        stringList.add(&quot;iasdfasdfas&quot;);</span><br><span class="line">        stringList.add(&quot;zero&quot;);</span><br><span class="line">        stringList.add(&quot;zoo&quot;);</span><br><span class="line">        stringList.add(&quot;zeus&quot;);</span><br><span class="line">        stringList.add(&quot;zebra&quot;);</span><br><span class="line">        stringList.add(&quot;zest&quot;);</span><br><span class="line">        stringList.add(&quot;zing&quot;);</span><br><span class="line">        return stringList;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://images.cnitblog.com/blog/519621/201305/29202506-62bcdfc453b447bfa587bc07230e2487.png" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://blog.henjue.net/2013/05/29/android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d/" data-id="cjf9ihjbt000ao4q9lbqgc1dp" class="article-share-link" data-share="baidu">share</a>
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/4/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/">Next &raquo;</a>
+    </nav>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/">android</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/other/">other</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-Android-Data-Binding-基础用法/">Google Android Data Binding 基础用法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tagcloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Google-Android-Data-Binding-基础用法/" style="font-size: 10px;">Google Android Data Binding 基础用法</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">archive</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">August 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">June 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">May 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/">April 2011</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">recent_posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/04/12/处理circleci构建android的时候无法更新新版build-tool问题/">处理circleci构建android的时候无法更新新版build tool问题</a>
+          </li>
+        
+          <li>
+            <a href="/2015/06/24/share-sdk-使用教程/">share sdk 使用教程</a>
+          </li>
+        
+          <li>
+            <a href="/2015/06/19/向大家提供一个jcenter镜像/">向大家提供一个jcenter镜像</a>
+          </li>
+        
+          <li>
+            <a href="/2015/06/01/Google-Android-DataBinding-Part1/">Google Android DataBinding Part1</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/19/去掉Android-5-0-感叹号/">去掉Android 5.0 感叹号</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">links</h3>
+    <div class="widget">
+      <ul>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    <div class="widget-wrap">
+<h3 class="widget-title">WeiBo</h3>
+<div class="widget">
+<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1655657893&verifier=6ddf902b&dpc=1"></iframe>
+</div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 <a href="http://weibo.com/henjue/" target="_blank">henjue</a>. <a href="http://www.miitbeian.gov.cn/" style="color:#bababa;text-decoration:underline">沪ICP备14023529号</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>window._bd_share_config={"common":{},"share":{"bdCustomStyle":"nocss.css"}};with(document)0[(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion="+~(-new Date()/36e5)];</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js"></script>
+  </div>
+
+  <!--百度统计-->
+  <script type="text/javascript">
+  var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+  document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3e1f7fae394a1295cd0879ebf43e6466' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+
+</body>
+</html>

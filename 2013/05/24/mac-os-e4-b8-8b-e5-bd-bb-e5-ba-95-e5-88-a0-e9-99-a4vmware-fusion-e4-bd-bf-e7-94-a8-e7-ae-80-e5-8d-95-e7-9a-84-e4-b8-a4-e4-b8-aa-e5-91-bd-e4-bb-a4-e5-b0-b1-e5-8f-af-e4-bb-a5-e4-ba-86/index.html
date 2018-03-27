@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>mac os 下彻底删除VMware Fusion 使用简单的两个命令就可以了 | henjue Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="打开终端首先切换到root帐号登录 执行以下命令：123find /Applications/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;find /Library/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;find /Users/你平时使用的用户名/ -iname &quot;*vmware*&quot; -exec">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mac os 下彻底删除VMware Fusion 使用简单的两个命令就可以了">
+<meta property="og:url" content="http://blog.henjue.net/2013/05/24/mac-os-e4-b8-8b-e5-bd-bb-e5-ba-95-e5-88-a0-e9-99-a4vmware-fusion-e4-bd-bf-e7-94-a8-e7-ae-80-e5-8d-95-e7-9a-84-e4-b8-a4-e4-b8-aa-e5-91-bd-e4-bb-a4-e5-b0-b1-e5-8f-af-e4-bb-a5-e4-ba-86/index.html">
+<meta property="og:site_name" content="henjue Blog">
+<meta property="og:description" content="打开终端首先切换到root帐号登录 执行以下命令：123find /Applications/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;find /Library/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;find /Users/你平时使用的用户名/ -iname &quot;*vmware*&quot; -exec">
+<meta property="og:updated_time" content="2018-03-27T10:17:58.180Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mac os 下彻底删除VMware Fusion 使用简单的两个命令就可以了">
+<meta name="twitter:description" content="打开终端首先切换到root帐号登录 执行以下命令：123find /Applications/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;find /Library/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;find /Users/你平时使用的用户名/ -iname &quot;*vmware*&quot; -exec">
+  
+    <link rel="alternative" href="/atom.xml" title="henjue Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">henjue Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Android Developer,Linuxer,Googler，LiGuxer, Idiot</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="blog.henjue.net">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-mac-os-e4-b8-8b-e5-bd-bb-e5-ba-95-e5-88-a0-e9-99-a4vmware-fusion-e4-bd-bf-e7-94-a8-e7-ae-80-e5-8d-95-e7-9a-84-e4-b8-a4-e4-b8-aa-e5-91-bd-e4-bb-a4-e5-b0-b1-e5-8f-af-e4-bb-a5-e4-ba-86" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/05/24/mac-os-e4-b8-8b-e5-bd-bb-e5-ba-95-e5-88-a0-e9-99-a4vmware-fusion-e4-bd-bf-e7-94-a8-e7-ae-80-e5-8d-95-e7-9a-84-e4-b8-a4-e4-b8-aa-e5-91-bd-e4-bb-a4-e5-b0-b1-e5-8f-af-e4-bb-a5-e4-ba-86/" class="article-date">
+  <time datetime="2013-05-23T19:45:00.000Z" itemprop="datePublished">2013-05-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      mac os 下彻底删除VMware Fusion 使用简单的两个命令就可以了
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>打开终端首先切换到root帐号登录</p>
+<p>执行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">find /Applications/ -iname <span class="string">"*vmware*"</span> -<span class="built_in">exec</span> rm -rf &#123;&#125; ;</span><br><span class="line">find /Library/ -iname <span class="string">"*vmware*"</span> -<span class="built_in">exec</span> rm -rf &#123;&#125; ;</span><br><span class="line">find /Users/你平时使用的用户名/ -iname <span class="string">"*vmware*"</span> -<span class="built_in">exec</span> rm -rf &#123;&#125; ;</span><br></pre></td></tr></table></figure></p>
+<p>注:mac下使用 find | xargs rm -rf的的方式没法删除，但是一般发行版的linux下就可以使用这个方式使用以上使用了exec</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://blog.henjue.net/2013/05/24/mac-os-e4-b8-8b-e5-bd-bb-e5-ba-95-e5-88-a0-e9-99-a4vmware-fusion-e4-bd-bf-e7-94-a8-e7-ae-80-e5-8d-95-e7-9a-84-e4-b8-a4-e4-b8-aa-e5-91-bd-e4-bb-a4-e5-b0-b1-e5-8f-af-e4-bb-a5-e4-ba-86/" data-id="cjf9ihjc8000mo4q99txqi1ry" class="article-share-link" data-share="baidu">share</a>
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/05/29/android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          android继承View，onDraw方法实现首字母快速定位
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/05/06/-e4-bb-bfios-e7-89-88-e6-9c-ac-e5-8d-b0-e8-b1-a1-e7-ac-94-e8-ae-b0-e4-b8-8b-e6-8b-89-e4-b8-bb-e8-8f-9c-e5-8d-95/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">仿IOS版本印象笔记下拉主菜单</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/">android</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/other/">other</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-Android-Data-Binding-基础用法/">Google Android Data Binding 基础用法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tagcloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Google-Android-Data-Binding-基础用法/" style="font-size: 10px;">Google Android Data Binding 基础用法</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">archive</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">August 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">June 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">May 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/">April 2011</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">recent_posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/04/12/处理circleci构建android的时候无法更新新版build-tool问题/">处理circleci构建android的时候无法更新新版build tool问题</a>
+          </li>
+        
+          <li>
+            <a href="/2015/06/24/share-sdk-使用教程/">share sdk 使用教程</a>
+          </li>
+        
+          <li>
+            <a href="/2015/06/19/向大家提供一个jcenter镜像/">向大家提供一个jcenter镜像</a>
+          </li>
+        
+          <li>
+            <a href="/2015/06/01/Google-Android-DataBinding-Part1/">Google Android DataBinding Part1</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/19/去掉Android-5-0-感叹号/">去掉Android 5.0 感叹号</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">links</h3>
+    <div class="widget">
+      <ul>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    <div class="widget-wrap">
+<h3 class="widget-title">WeiBo</h3>
+<div class="widget">
+<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1655657893&verifier=6ddf902b&dpc=1"></iframe>
+</div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 <a href="http://weibo.com/henjue/" target="_blank">henjue</a>. <a href="http://www.miitbeian.gov.cn/" style="color:#bababa;text-decoration:underline">沪ICP备14023529号</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>window._bd_share_config={"common":{},"share":{"bdCustomStyle":"nocss.css"}};with(document)0[(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion="+~(-new Date()/36e5)];</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js"></script>
+  </div>
+
+  <!--百度统计-->
+  <script type="text/javascript">
+  var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+  document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3e1f7fae394a1295cd0879ebf43e6466' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+
+</body>
+</html>
