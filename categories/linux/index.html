@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>Category: linux | henjue Blog</title>
+<title>分类: linux | henjue Blog</title>
 
 
     <link rel="alternate" href="/atom.xml" title="henjue Blog" type="application/atom+xml">
@@ -97,7 +97,7 @@
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="menu">
                         
-                            <li role="presentation"><a href="/"><i class="fa fa-fw "></i>Home</a>
+                            <li role="presentation"><a href="/"><i class="fa fa-fw "></i>首页</a>
                             </li>
                         
                             <li role="presentation"><a href="/categories/android/"><i class="fa fa-fw "></i>客户端</a>
@@ -144,7 +144,7 @@
             <p class="brief">
                 
                     因而我公司工作需要，我讲linux shell写成linux shell 脚本文件：build/envsetup.sh
-12345678910111213141516171819202122232425262728293031323334353637383940functi...
+12345678910111213141516171819202122232425262728293031323334353637383940function replace_usage()&amp;#123;cat &amp;lt;&amp;lt; USAGEUsage:	replace [OPTIONS] old_str new_strDescription:	find and replace stringOP...
                 
             </p> 
         </div>
@@ -167,7 +167,8 @@
                 
                     首先安装一些编译所需的库,和工具
 1sudo apt-get install cmake libglib2.0-dev libpurple-dev libmozjs185-dev libcurl-ocaml-dev libsqlite3-dev
-然后到作者的git下载代码1...
+然后到作者的git下载代码1git clone git@github.com:xiehuc/pidgin-lwqq.git
+下载完了开始编译安装123456git submodule initgit submodule updatemkdir build;cd bui...
                 
             </p> 
         </div>
@@ -188,7 +189,8 @@
             </div>
             <p class="brief">
                 
-                    今天自己手贱把自己的macbook硬盘全干掉了,无奈回复系统,没有光盘.我的台式机上只有linux系统.但是我有OS 10.8的dmg镜像(很早之前下载放在电脑里的)使用苹果EFI固件上自带的在线恢复(开机command+R的那个在线恢复),奶奶的,我20M光纤,居然要还那...
+                    今天自己手贱把自己的macbook硬盘全干掉了,无奈回复系统,没有光盘.我的台式机上只有linux系统.但是我有OS 10.8的dmg镜像(很早之前下载放在电脑里的)使用苹果EFI固件上自带的在线恢复(开机command+R的那个在线恢复),奶奶的,我20M光纤,居然要还那么慢,所以放弃这个方法,后来上网搜了半天全是在mac下去制作USB启动盘,你妈都是写傻逼啊.我系统都没了,我还哪里去拿mac来做启动盘?好吧linux下弄吧
+linux下先用parted命令给u盘从重新分区.其他工具我不知道但是我知道这个工...
                 
             </p> 
         </div>
@@ -210,7 +212,8 @@
             <p class="brief">
                 
                     打开终端首先切换到root帐号登录
-执行以下命令：123find /Applications/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;find /Library/ -iname &quot;*vmware*&quot; -exec rm -r...
+执行以下命令：123find /Applications/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;find /Library/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;find /Users/你平时使用的用户名/ -iname &quot;*vmware*&quot; -exec rm -rf &amp;#123;&amp;#125; ;
+注:mac下使用 find | xargs rm -rf的的方式没法删...
                 
             </p> 
         </div>
@@ -231,13 +234,13 @@
         
         
     <div class="widget">    
-        <h3 class="title">Search</h3>
+        <h3 class="title">搜索</h3>
         <div id="search-form">
             <div id="result-mask" class="hide"></div>
             <div class="search-area">
                 
                     <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
-                    <button type="button" class="search-form-submit" id="search-local">localSearch</button>
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
                 
                 
             </div>
@@ -262,7 +265,7 @@
         
         
     <div class="widget">
-      <h3 class="title">Social</h3> 
+      <h3 class="title">社交</h3> 
         <div class="content social">
             
 	            <a href="//github.com/henjue" rel="external nofollow" title="Github" target="_blank">
@@ -296,23 +299,23 @@
         
         
     <div class="widget">
-        <h3 class="title">Categories</h3>
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/"><i class="fa" aria-hidden="true">android</i></a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/"><i class="fa" aria-hidden="true">linux</i></a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/other/"><i class="fa" aria-hidden="true">other</i></a><span class="category-list-count">1</span></li></ul>
+        <h3 class="title">分类</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/"><i class="fa" aria-hidden="true">android</i></a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/"><i class="fa" aria-hidden="true">linux</i></a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/other/"><i class="fa" aria-hidden="true">other</i></a><span class="category-list-count">1</span></li></ul>
     </div>
 
 
         
         
     <div class="widget">
-      <h3 class="title">Archives</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/"><i class="fa" aria-hidden="true">April 2016</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/"><i class="fa" aria-hidden="true">June 2015</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/"><i class="fa" aria-hidden="true">March 2015</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/"><i class="fa" aria-hidden="true">February 2015</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/"><i class="fa" aria-hidden="true">November 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/"><i class="fa" aria-hidden="true">October 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/"><i class="fa" aria-hidden="true">August 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/"><i class="fa" aria-hidden="true">July 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/"><i class="fa" aria-hidden="true">June 2014</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/"><i class="fa" aria-hidden="true">June 2013</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/"><i class="fa" aria-hidden="true">May 2013</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/"><i class="fa" aria-hidden="true">April 2011</i></a><span class="archive-list-count">1</span></li></ul>
+      <h3 class="title">归档</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/"><i class="fa" aria-hidden="true">March 2018</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/"><i class="fa" aria-hidden="true">April 2016</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/"><i class="fa" aria-hidden="true">June 2015</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/"><i class="fa" aria-hidden="true">March 2015</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/"><i class="fa" aria-hidden="true">February 2015</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/"><i class="fa" aria-hidden="true">November 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/"><i class="fa" aria-hidden="true">October 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/"><i class="fa" aria-hidden="true">August 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/"><i class="fa" aria-hidden="true">July 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/"><i class="fa" aria-hidden="true">June 2014</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/"><i class="fa" aria-hidden="true">June 2013</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/"><i class="fa" aria-hidden="true">May 2013</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/"><i class="fa" aria-hidden="true">April 2011</i></a><span class="archive-list-count">1</span></li></ul>
     </div>
 
 
         
         
   <div class="widget">
-    <h3 class="title">Tag Cloud</h3>
+    <h3 class="title">标签云</h3>
     <div class="content tag-cloud">
         <a href="/tags/Google-Android-Data-Binding-基础用法/" style="font-size: 10px;">Google Android Data Binding 基础用法</a>
     </div>
@@ -322,7 +325,7 @@
         
         
     <div class="widget">
-        <h3 class="title">Friends</h3>
+        <h3 class="title">友链</h3>
         <div class="content friends-link">
         
             <a href="https://www.j99.io" class="fa" target="_blank">个人博客</a>

@@ -97,7 +97,7 @@
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="menu">
                         
-                            <li role="presentation"><a href="/"><i class="fa fa-fw "></i>Home</a>
+                            <li role="presentation"><a href="/"><i class="fa fa-fw "></i>首页</a>
                             </li>
                         
                             <li role="presentation"><a href="/categories/android/"><i class="fa fa-fw "></i>客户端</a>
@@ -131,6 +131,63 @@
     <div class="post-content">
         <div class="post-head home-post-head">
             <h1 class="post-title">
+                <a href="/2018/03/28/RxCache-网络异常的时候使用本地缓存数据/">RxCache 网络异常的时候使用本地缓存数据</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年03月28日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                本文假设你使用的是RxCache+RxJava2+retrofit2网络请求,本文代码片段均为使用kotlin,本文中代码可能无法直接运行RxCache在构建Provider的时候提供了一个useExpiredDataIfLoaderNotAvailable选项，但是这个选项的作用在缓存没有过期的时候就不起作用了。比如某个接口设置的缓存时间比较长比如1一个月，或者用客户端需求是用户主动触发下拉刷新的时候就必须请求服务器的数据。假如失败或者服务器出错了就默认显示本地缓存数据反之使用服务器最新数据并缓存。这试试仅...
+            
+        </p> 
+    </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/android">
+            android
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                 
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">2018/03/28</span>
+    </span>
+</div>
+
+        </div>
+
+        <div class="post-permalink"> 
+            <a href="/2018/03/28/RxCache-网络异常的时候使用本地缓存数据/" class="btn btn-default">阅读全文</a>
+        </div>
+    </footer>
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
                 <a href="/2016/04/12/处理circleci构建android的时候无法更新新版build-tool问题/">处理circleci构建android的时候无法更新新版build tool问题</a>
             </h1>
             <div class="post-meta">  &bull;
@@ -141,7 +198,8 @@
         </div>
         <p class="brief">
             
-                circle.yml如下123456dependencies:  pre:    - echo y | android update sdk --no-ui --all --filter &quot;android-23,build-tools-23.0.2,extra-androi...
+                circle.yml如下123456dependencies:  pre:    - echo y | android update sdk --no-ui --all --filter &quot;android-23,build-tools-23.0.2,extra-android-support,extra-google-m2repository,extra-android-m2repositorytest:  override:    - ./gradlew assemblePreview
+在使用circlec...
             
         </p> 
     </div>
@@ -200,7 +258,8 @@
             
                 最近网上某公司提供的Share SDK干了一些不太爽的事情，正好这几天公司项目在做这块，就写了一个sdk出来供大家使用，开源、方便、安全。
 项目地址:https://github.com/henjue/sharesdk
-1、加入依赖1compile &#39;org.henjue....
+1、加入依赖1compile &#39;org.henjue.library:sharesdk:1.0.1&#39;
+2、在Applicaton中初始化12345678/*参数依次是 *微信 key *微博 key *Q Q  key *微信 secret *微薄 redirect */ShareSDK.ge...
             
         </p> 
     </div>
@@ -257,7 +316,9 @@
         </div>
         <p class="brief">
             
-                Google 2015 IO大会中对于Android开发曾了Data Binding(虽然在这之前已经有一些第三方框架，在在这里我们只到google)PS:目前不推荐正是项目中使用，因为Data Binding的目前紧紧处于可以编译可以运行使用阶段，对于很对开发者来说不适合...
+                Google 2015 IO大会中对于Android开发曾了Data Binding(虽然在这之前已经有一些第三方框架，在在这里我们只到google)PS:目前不推荐正是项目中使用，因为Data Binding的目前紧紧处于可以编译可以运行使用阶段，对于很对开发者来说不适合使用，比如gradle还不能自动clean，Android Studio也没有友好的提示等等.
+###以上代码运行自动显示User里相应数据，点击”隐藏”按钮，将设置nickname属性为””，TextView自动隐藏;
+###其他用法将在...
             
         </p> 
     </div>
@@ -317,7 +378,9 @@
         <p class="brief">
             
                 Android 5.0 状态栏网络图标上有个感叹号，输入下面的命令即可。1adb shell &quot;settings put global captive_portal_server 204.j99.io&quot;
-出现感叹号的原因和为什么要这么做这里就不讲了，网上有很多资料，这里主要...
+出现感叹号的原因和为什么要这么做这里就不讲了，网上有很多资料，这里主要是为了提供204.j99.io 这个服务器地址页面直接访问是什么都看不到了，其实就是相应一个204的HTTP Status Code
+Server Source Code:https://github.com/henjue/204
+
             
         </p> 
     </div>
@@ -359,63 +422,6 @@
 </article>
 
 
-<article class="post">
-    
-    <div class="post-content">
-        <div class="post-head home-post-head">
-            <h1 class="post-title">
-                <a href="/2015/03/17/解决com-android-dex-DexException-Multiple-dex-files-define-L-your-app-packagename-BuildConfig/">解决com.android.dex.DexException: Multiple dex files define L<your app packagename>/BuildConfig;</a>
-            </h1>
-            <div class="post-meta">  &bull;
-                <time class="post-date" datetime="" title="">
-                    2015年03月17日
-                </time>
-            </div>
-        </div>
-        <p class="brief">
-            
-                一般我们在使用Android Studio建立多个module，有两个包名一样且其中某个(些)module是library的时候多半会出现这个错误，这是因为有多个BuildConfig.java(包名也相同)这时候其实只需要在类型是library的build.gradle中...
-            
-        </p> 
-    </div>
-    <footer class="post-footer clearfix">
-        <div class="pull-left tag-list">
-            <div class="post-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/ ">
-             
-        </a>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-                 
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2015/03/17</span>
-    </span>
-</div>
-
-        </div>
-
-        <div class="post-permalink"> 
-            <a href="/2015/03/17/解决com-android-dex-DexException-Multiple-dex-files-define-L-your-app-packagename-BuildConfig/" class="btn btn-default">阅读全文</a>
-        </div>
-    </footer>
-</article>
-
-
 
 
     <nav class="pagination" role="navigation">
@@ -432,13 +438,13 @@
         
         
     <div class="widget">    
-        <h3 class="title">Search</h3>
+        <h3 class="title">搜索</h3>
         <div id="search-form">
             <div id="result-mask" class="hide"></div>
             <div class="search-area">
                 
                     <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
-                    <button type="button" class="search-form-submit" id="search-local">localSearch</button>
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
                 
                 
             </div>
@@ -463,7 +469,7 @@
         
         
     <div class="widget">
-      <h3 class="title">Social</h3> 
+      <h3 class="title">社交</h3> 
         <div class="content social">
             
 	            <a href="//github.com/henjue" rel="external nofollow" title="Github" target="_blank">
@@ -497,23 +503,23 @@
         
         
     <div class="widget">
-        <h3 class="title">Categories</h3>
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/"><i class="fa" aria-hidden="true">android</i></a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/"><i class="fa" aria-hidden="true">linux</i></a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/other/"><i class="fa" aria-hidden="true">other</i></a><span class="category-list-count">1</span></li></ul>
+        <h3 class="title">分类</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/"><i class="fa" aria-hidden="true">android</i></a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/"><i class="fa" aria-hidden="true">linux</i></a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/other/"><i class="fa" aria-hidden="true">other</i></a><span class="category-list-count">1</span></li></ul>
     </div>
 
 
         
         
     <div class="widget">
-      <h3 class="title">Archives</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/"><i class="fa" aria-hidden="true">April 2016</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/"><i class="fa" aria-hidden="true">June 2015</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/"><i class="fa" aria-hidden="true">March 2015</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/"><i class="fa" aria-hidden="true">February 2015</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/"><i class="fa" aria-hidden="true">November 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/"><i class="fa" aria-hidden="true">October 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/"><i class="fa" aria-hidden="true">August 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/"><i class="fa" aria-hidden="true">July 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/"><i class="fa" aria-hidden="true">June 2014</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/"><i class="fa" aria-hidden="true">June 2013</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/"><i class="fa" aria-hidden="true">May 2013</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/"><i class="fa" aria-hidden="true">April 2011</i></a><span class="archive-list-count">1</span></li></ul>
+      <h3 class="title">归档</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/"><i class="fa" aria-hidden="true">March 2018</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/"><i class="fa" aria-hidden="true">April 2016</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/"><i class="fa" aria-hidden="true">June 2015</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/"><i class="fa" aria-hidden="true">March 2015</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/"><i class="fa" aria-hidden="true">February 2015</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/"><i class="fa" aria-hidden="true">November 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/"><i class="fa" aria-hidden="true">October 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/"><i class="fa" aria-hidden="true">August 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/"><i class="fa" aria-hidden="true">July 2014</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/"><i class="fa" aria-hidden="true">June 2014</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/"><i class="fa" aria-hidden="true">June 2013</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/"><i class="fa" aria-hidden="true">May 2013</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/"><i class="fa" aria-hidden="true">April 2011</i></a><span class="archive-list-count">1</span></li></ul>
     </div>
 
 
         
         
   <div class="widget">
-    <h3 class="title">Tag Cloud</h3>
+    <h3 class="title">标签云</h3>
     <div class="content tag-cloud">
         <a href="/tags/Google-Android-Data-Binding-基础用法/" style="font-size: 10px;">Google Android Data Binding 基础用法</a>
     </div>
@@ -523,7 +529,7 @@
         
         
     <div class="widget">
-        <h3 class="title">Friends</h3>
+        <h3 class="title">友链</h3>
         <div class="content friends-link">
         
             <a href="https://www.j99.io" class="fa" target="_blank">个人博客</a>
