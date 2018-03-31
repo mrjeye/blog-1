@@ -261,6 +261,166 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.j99.io/2014/08/05/-e5-b1-8f-e8-94-bdandroid-e7-9a-84sytem-out-e5-92-8csystem-err/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="henjue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="henjue Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/08/05/-e5-b1-8f-e8-94-bdandroid-e7-9a-84sytem-out-e5-92-8csystem-err/" itemprop="url">屏蔽android的Sytem.out和System.err</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-08-05T10:19:28+08:00">
+                2014-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/android/" itemprop="url" rel="index">
+                    <span itemprop="name">android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2014/08/05/-e5-b1-8f-e8-94-bdandroid-e7-9a-84sytem-out-e5-92-8csystem-err/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2014/08/05/-e5-b1-8f-e8-94-bdandroid-e7-9a-84sytem-out-e5-92-8csystem-err/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          源代码中这个类 ./frameworks/base/core/java/com/android/internal/os/RuntimeInit.java中有个redirectLogStreams这个方法。这个方法就是将Sytem.out和System.err重定向到android的log系统
+原来的代码：123456789/**  * Redirect System.out and System.err to the Android log.  */ public static void redirectLogStreams() &#123;     System.out.close();  
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2014/08/05/-e5-b1-8f-e8-94-bdandroid-e7-9a-84sytem-out-e5-92-8csystem-err/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://www.j99.io/2014/07/22/android-aidl-e5-8f-82-e6-95-b0-e6-98-af-e5-ae-9e-e7-8e-b0parcelable-e6-8e-a5-e5-8f-a3-e7-9a-84-e5-af-b9-e8-b1-a1-e6-98-af-e8-8e-ab-e5-90-8d-e5-85-b6-e5-a6-99-e7-9a-84nullpointexception-e9-94-99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -891,165 +1051,6 @@ linux下先用parted命令给u盘从重新分区.其他工具我不知道但是�
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.j99.io/2013/05/29/android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="henjue">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="henjue Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/05/29/android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d/" itemprop="url">android继承View，onDraw方法实现首字母快速定位</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-05-29T12:26:00+08:00">
-                2013-05-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/android/" itemprop="url" rel="index">
-                    <span itemprop="name">android</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2013/05/29/android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2013/05/29/android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/05/29/android-e7-bb-a7-e6-89-bfview-ef-bc-8condraw-e6-96-b9-e6-b3-95-e5-ae-9e-e7-8e-b0-e9-a6-96-e5-ad-97-e6-af-8d-e5-bf-ab-e9-80-9f-e5-ae-9a-e4-bd-8d/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1100,7 +1101,7 @@ linux下先用parted命令给u盘从重新分区.其他工具我不知道但是�
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
